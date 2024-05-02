@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Form</title>
+</head>
+<body>
+    <h1>Registration form</h1>
+    <hr>
+    <br>
+    <form>
+        <label>Firstname:<input type="text" name="Firstname" placeholder="Enter your first name" required></label>
+        <br><br>
+        <label>Lastname:<input type="text" name="Lastname" placeholder="Enter your last name" required></label>
+        <br><br>
+        <label>Male<input type="radio" name="gender" value="male" </label>
+        <label>Female<input type="radio" name="gender" value="female"</label>
+        <label>Other<input type="radio" name="gender" value="other" </label>
+        <br><br>
+        <label>Email:<input  type="email" name="email" placeholder="Enter your Email" required></label>
+        <label>Password:<input type="text" name="password" placeholder="Enter your password" pattern=".{5,10}" required title="Please enter pwd of length 5 and 10" ></label>
+        <br><br>
+        <label>Birthday:</label>
+        <select id="birthday" name="Day">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+        <select id="birthday" name="Month">
+            <option>Jan</option>
+            <option>Feb</option>
+            <option>Mar</option>
+            <option>April</option>
+            <option>May</option>
+        </select>
+        <select id="birthday" name="Year">
+            <option>2000</option>
+            <option>2001</option>
+            <option>2002</option>
+            <option>2003</option>
+            <option>2004</option>
+        </select>
+        <br><br>
+        <label>I agree to terms and conditions<input type="checkbox" name="check"></label>
+        <br><br>
+        <input type="Submit" name="submit" onclick="alert('Submitted successfully');">
+    </form>
+</body>
+</html>
